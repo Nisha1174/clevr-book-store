@@ -1,0 +1,46 @@
+/* ================= FEATURES SECTION ================= */
+.features {
+  background-color: #FCF5EE;
+  padding: 60px 80px;
+}
+
+/* ================= FEATURES CONTAINER ================= */
+.features__container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ================= FEATURE ITEM ================= */
+.feature-item {
+  flex: 1;
+  align-items: flex-start;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* ================= FEATURE ICON ================= */
+.feature-icon {
+  font-size: 32px;
+  color: var(--primary-color);
+  margin-bottom: 16px;
+}
+
+/* ================= FEATURE TITLE ================= */
+.feature-item h4 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #000;
+}
+
+/* ================= FEATURE DESCRIPTION ================= */
+.feature-item p {
+  font-size: 13px;
+  color: #666;
+  line-height: 1.6;
+}

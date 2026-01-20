@@ -1,0 +1,201 @@
+/* ================= TOP RATED SECTION ================= */
+.top-rated {
+  padding: 60px 80px;
+  background-color: #F7F6D3; /* matches reference */
+  position: relative;
+}
+
+/* ================= HEADER ================= */
+.top-rated__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.top-rated__header h2 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.view-more {
+  color: var(--primary-color);
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+/* ================= SLIDER ================= */
+.top-rated__slider {
+  position: relative;
+}
+
+/* NAV BUTTONS */
+.nav-btn {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #fff;
+  color: var(--primary-color);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.nav-btn.left {
+  left: -18px;
+}
+
+.nav-btn.right {
+  right: -18px;
+}
+
+.nav-btn:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+/* ================= LIST ================= */
+.top-rated__list {
+  display: flex;
+  justify-content: center;
+  /* for adding gap between the cards incered the gap */
+  gap: 46px;
+  padding: 0 70px;
+}
+
+/* ================= CARD ================= */
+.top-card {
+  width: 160px;
+  text-align: center;
+  position: relative;
+}
+
+/* IMAGE */
+.top-card__image {
+  height: 220px;
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.top-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ================= SMOOTH EDGE BLUR (REFERENCE STYLE) ================= */
+/* This creates a VERY SOFT blur that gradually fades, not a hard strip */
+
+/* LEFT EDGE CARD BLUR */
+.fade-left::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 35%;                 /* slightly wider for smoother fade */
+  height: 220px;
+
+  /* 🔥 Gradient fade (strongest at edge → transparent inward) */
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.75),
+    rgba(255, 255, 255, 0.35),
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+
+  backdrop-filter: blur(6px); /* soft premium blur */
+  border-radius: 14px 0 0 14px;
+  pointer-events: none;
+}
+
+/* RIGHT EDGE CARD BLUR */
+.fade-right::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 35%;                 /* same smooth width */
+  height: 220px;
+
+  /* 🔥 Reverse gradient for right side */
+  background: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 0.75),
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+
+  backdrop-filter: blur(6px);
+  border-radius: 0 14px 14px 0;
+  pointer-events: none;
+}
+
+
+/* RATING */
+.top-rating {
+  color: #ff9800;
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+
+/* TITLE */
+.top-title {
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+/* AUTHOR */
+.top-author {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/* PRICE + CART */
+.top-bottom {
+  position: relative;  
+  display: inline-flex;
+  
+  align-items: center;
+}
+
+.top-price {
+  background-color: #ece4f1;
+  color: var(--primary-color);
+   padding: 10px 44px 10px 16px; 
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* CART BUTTON */
+.cart-btn {
+  position: absolute; 
+  right: -12px;  
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

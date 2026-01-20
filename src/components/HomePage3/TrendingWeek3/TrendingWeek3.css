@@ -1,0 +1,97 @@
+.hp3-trending {
+  padding: 90px 20px;
+  background: #ffffff;
+}
+
+/* ===== Header ===== */
+.hp3-trending__header {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 60px;
+}
+
+.hp3-trending__header h2 {
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.hp3-trending__header p {
+  font-size: 14px;
+  color: #777;
+  margin-top: 10px;
+}
+
+/* ===== Layout ===== */
+.hp3-trending__layout {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 35px;
+  padding-left: 40px;
+  align-items: center;
+}
+
+/* ===== Left Featured Card ===== */
+.hp3-featured-card {
+  height: 440px;
+  border-radius: 20px;
+  background: linear-gradient(160deg, #0f0c29, #302b63);
+  color: #fff;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.hp3-featured-card .dots {
+  margin-bottom: auto;
+  font-size: 18px;
+  color: #f5b700;
+}
+
+.hp3-featured-card h3 {
+  font-size: 26px;
+  line-height: 1.3;
+}
+
+/* ===== Right Grid ===== */
+.hp3-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+/* ===== Cards ===== */
+.hp3-card {
+  height: 200px;
+  border-radius: 16px;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  align-items: flex;
+  position: relative;
+}
+
+.hp3-card h4 {
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+/* ===== Colors ===== */
+.purple { background: #5b123c; }
+.green  { background: #6aa84f; }
+.brown  { background: #6b4f2c; }
+.blue   { background: #1c4587; }
+.pink   { background: #d65b8c; }
+.dark   { background: #111; }
+
+/* ===== Search Icon ===== */
+.dark .search-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 28px;
+  background: #8e44ad;
+  padding: 10px;
+  border-radius: 50%;
+}

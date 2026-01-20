@@ -1,0 +1,50 @@
+.hp3-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 40px;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+/* LOGO */
+.hp3-logo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+/* NAV */
+.hp3-nav {
+  display: flex;
+  gap: 22px;
+  font-size: 13px;
+  color: #666;
+}
+
+.hp3-nav span {
+  cursor: pointer;
+}
+
+.hp3-nav .active {
+  color: black;
+  font-weight: 1000;
+}
+
+/* USER */
+.hp3-user {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.user-btn {
+  border: 1px solid #7b1fa2;
+  background: transparent;
+  padding: 6px 14px;
+  border-radius: 6px;
+  color: #7b1fa2;
+  font-size: 13px;
+}

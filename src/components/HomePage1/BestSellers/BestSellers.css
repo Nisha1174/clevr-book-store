@@ -1,0 +1,163 @@
+:root {
+  --primary-color: #8f0177;
+}
+
+/* ================= SECTION ================= */
+.best-sellers {
+  padding: 60px 80px;
+  background-color: white ;
+  margin-top: 40px; /* prevents touching Hero */
+}
+
+/* ================= HEADER ================= */
+.best-sellers__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.best-sellers__header h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.view-more {
+  color: var(--primary-color);
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* ================= SLIDER ================= */
+.best-sellers__slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* SLIDER BUTTONS */
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: white;
+  border: none;
+  color: var(--primary-color);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+}
+
+.slider-btn:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.slider-btn.left {
+  left: -18px;
+}
+
+.slider-btn.right {
+  right: -18px;
+}
+
+/* ================= LIST ================= */
+.best-sellers__list {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  padding: 0 60px;
+}
+
+/* ================= CARD ================= */
+.best-card {
+  display: flex;
+  gap: 16px;
+  width: 340px;
+}
+
+/* IMAGE */
+.best-card__image {
+  width: 120px;
+  height: 180px;
+  border-radius: 14px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.best-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* CONTENT */
+.best-card__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* BADGES */
+.best-badges {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.badge {
+  font-size: 11px;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-weight: 500;
+}
+
+.badge.category {
+  background-color: #efe6f5;
+  color: var(--primary-color);
+}
+
+.badge.rating {
+  background-color: #ffe3b3;
+  color: #ff9800;
+}
+
+/* TEXT */
+.best-title {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.best-author {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+/* PRICE */
+.best-price {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.price {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.old-price {
+  font-size: 12px;
+  text-decoration: line-through;
+  color: #999;
+}

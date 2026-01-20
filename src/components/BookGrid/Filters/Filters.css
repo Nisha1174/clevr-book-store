@@ -1,0 +1,83 @@
+.filters {
+  width: 280px;
+  padding: 24px;
+  background: #ffffff;
+  border-right: 1px solid #eee;
+}
+
+.filters-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.filter-section {
+  margin-bottom: 22px;
+}
+
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.filter-header h4 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.filter-section label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.filter-section input[type="checkbox"] {
+  accent-color: #7b2cbf;
+}
+
+.link-btn {
+  background: none;
+  border: none;
+  color: #7b2cbf;
+  font-size: 13px;
+  cursor: pointer;
+  padding: 0;
+  margin-top: 6px;
+}
+
+input[type="range"] {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.price-range {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #666;
+}
+
+.btn-primary {
+  width: 100%;
+  background: #7b2cbf;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  width: 100%;
+  background: transparent;
+  border: none;
+  margin-top: 10px;
+  color: #777;
+  cursor: pointer;
+}

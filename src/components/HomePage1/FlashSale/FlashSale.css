@@ -1,0 +1,140 @@
+/* ================= FLASH SALE SECTION ================= */
+.flash-sale {
+  background-color: #7b2492;
+  padding: 60px 80px 70px;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+/* ================= LEFT CONTENT ================= */
+.flash-left {
+  max-width: 320px;
+  color: #fff;
+}
+
+.flash-timer {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 14px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+/* ================= SLIDER ================= */
+.flash-slider {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+/* 🔵 DOT PATTERN (3 × 6) */
+.dot-pattern {
+  position: absolute;
+  top: -40px;               /* upper-left placement */
+  left: 140px;
+  width: 96px;
+  height: 64px;
+  background-image: radial-gradient(
+    rgba(255,255,255,0.75) 2.2px,
+    transparent 2.2px
+  );
+  background-size: 14px 14px;
+  pointer-events: none;
+}
+
+/* ================= SLIDER BUTTON ================= */
+.slider-btn {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: #7b2492;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.slider-btn.left { left: -28px; }
+.slider-btn.right { right: -28px; }
+
+/* ================= FLASH CARDS ================= */
+.flash-cards {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  width: 100%;
+}
+
+/* ================= FLASH CARD ================= */
+.flash-card {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  gap: 18px;
+  width: 420px;
+  position: relative;
+}
+
+/* 🔥 SMOOTH BLUISH GRADIENT (INACTIVE CARD) */
+.flash-card.inactive::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+
+  /* 🔵 Bluish light → dark gradient (NOT full blur) */
+  background: linear-gradient(
+    to right,
+    rgba(123,36,146,0.15),
+    rgba(123,36,146,0.35)
+  );
+}
+
+/* ================= IMAGE ================= */
+.flash-card__image {
+  width: 110px;
+  height: 150px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.flash-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ================= INFO ================= */
+.top-line {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.rating {
+  font-size: 12px;
+  color: #ff9800;
+}
+
+.rating small {
+  color: #999;
+}
+
+/* ================= PRICE ================= */
+.price strong {
+  color: #7b2492;
+  font-size: 18px;
+}
+
+.price span {
+  text-decoration: line-through;
+  color: #aaa;
+  font-size: 13px;
+}

@@ -1,0 +1,139 @@
+/* ================= TRENDING SECTION ================= */
+.trending {
+  padding: 60px 80px;
+  background-color: white;
+  text-align: center;
+}
+
+/* ================= SECTION HEADER ================= */
+.trending__header h2 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.trending__header p {
+  font-size: 14px;
+  color: #666;
+  max-width: 520px;
+  margin: 0 auto 40px;
+}
+
+/* ================= BOOK LIST ================= */
+.trending__list {
+  display: flex;
+  gap: 28px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ================= BOOK CARD ================= */
+.book-card {
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+
+  /* 🔴 CHANGED: center everything inside card */
+  align-items: center;
+}
+
+/* ================= BOOK COVER ================= */
+.book-cover {
+  height: 250px;
+  width: 100%;
+  border-radius: 14px;
+  position: relative;
+}
+
+/* ================= RATING CAPSULE ================= */
+.book-rating {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  background-color: rgba(255, 255, 255, 0.85); /* 🔥 capsule bg */
+  padding: 4px 8px;
+  border-radius: 20px; /* 🔥 capsule shape */
+}
+
+
+/* ORANGE STAR CIRCLE */
+.rating-star {
+  width: 20px;
+  height: 20px;
+  background-color: #ff9800;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* LIGHT GREY RATING NUMBER */
+.rating-value {
+  
+  color: #333;
+  font-size: 12px;
+  font-weight: 500;
+  
+  border-radius: 10px;
+}
+
+/* ================= BOOK INFO ================= */
+.book-info {
+  margin-top: 14px;
+
+  /* 🔴 CHANGED: center text */
+  text-align: center;
+}
+
+.book-category {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+/* 🔴 CHANGED: title bold + black */
+.book-title {
+  font-size: 14px;
+  font-weight: 700; /* bold */
+  color: #000; /* black */
+  margin: 6px 0 10px;
+}
+
+/* ================= PRICE BUTTON ================= */
+.book-price {
+  background-color: white;
+  color: var(--primary-color);
+  border-color: #F8F4EC;
+  font-size: 13px;
+
+  /* 🔴 CHANGED: bold price text */
+  font-weight: 700;
+
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* KEEPING YOUR HOVER EXACTLY SAME */
+.book-price:hover {
+  background-color: var(--primary-color);
+  color: white;
+  align-items: center;
+}
+
+/* ================= BOOK AUTHOR ================= */
+.book-author {
+  font-size: 12px;
+  font-weight: 100vh;
+  color: #777;
+  margin-bottom: 10px;
+  text-align: center;
+  margin-bottom: 18px;
+}
+

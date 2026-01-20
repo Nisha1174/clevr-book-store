@@ -1,0 +1,104 @@
+.trending-fixed {
+  padding: 80px 0;
+  text-align: center;
+  background: #fafafa;
+}
+
+.slider-shell {
+  position: relative;
+  width: 700px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 🔒 THIS PREVENTS CARDS ESCAPING */
+.card-window {
+  position: relative;
+  width: 520px;
+  height: 320px;
+  overflow: hidden;
+}
+
+/* BASE CARD */
+.card {
+  position: absolute;
+  width: 180px;
+  height: 260px;
+  border-radius: 16px;
+  color: #fff;
+
+  padding: 20px;
+  text-align: center;
+  line-height: 1.4;
+  word-break: break-word;
+
+  
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.45s ease;
+}
+
+/* SLOT SYSTEM (FIXED POSITIONS) */
+.slot-0 {
+  left: 50%;
+  transform: translateX(-50%) scale(1.35);
+  z-index: 6;
+  background: #12a27c;
+}
+
+.slot--1 {
+  left: 20%;
+  transform: scale(1);
+  z-index: 4;
+  background: #6b2f54;
+}
+
+.slot-1 {
+  right: 20%;
+  transform: scale(1);
+  z-index: 4;
+  background: #7a5a3c;
+}
+
+.slot--2 {
+  left: 0;
+  transform: scale(0.85);
+  z-index: 3;
+  background: #6b719a;
+}
+
+.slot-2 {
+  right: 0;
+  transform: scale(0.85);
+  z-index: 3;
+  background: #d86b97;
+}
+
+/* NAV BUTTONS */
+.nav-btn {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: none;
+  background: white;
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  z-index: 10;
+}
+
+.nav-btn.left {
+  margin-right: 10px;
+}
+
+.nav-btn.right {
+  margin-left: 10px;
+}
+
+.nav-btn:hover {
+  transform: scale(1.1);
+}

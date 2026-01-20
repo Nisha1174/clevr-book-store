@@ -1,0 +1,23 @@
+.menu-nav {
+  background: #7b1fa2;
+  padding: 14px 0;
+}
+
+.menu-nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-nav li {
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+.menu-nav li:hover {
+  font-weight: 700;   /* bold on hover */
+}
+

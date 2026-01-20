@@ -1,0 +1,19 @@
+.books-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr; /* Filter | Books */
+  gap: 40px;
+  padding: 40px 60px;
+  align-items: flex-start;
+}
+
+/* LEFT FILTER */
+.books-filter {
+  background: #faf7fc;
+  border-radius: 16px;
+  padding: 24px;
+}
+
+/* RIGHT CONTENT */
+.books-content {
+  width: 100%;
+}

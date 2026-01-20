@@ -1,0 +1,124 @@
+/* ================= HERO WRAPPER ================= */
+.hp2-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 90px 120px;
+  background: linear-gradient(135deg, #4b1368, #7a1fa2);
+  color: #fff;
+  overflow: hidden;
+}
+
+/* ================= LEFT CONTENT ================= */
+.hp2-hero__content {
+  max-width: 460px; /* FIX: controls text width */
+}
+
+.hp2-hero__title {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 18px;
+}
+
+.hp2-hero__title span {
+  color: #ffffff;
+}
+
+.hp2-hero__desc {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #e0d8ea;
+  margin-bottom: 26px;
+  max-width: 420px; /* FIX: same width as title */
+}
+
+/* ================= STATS ================= */
+.hp2-hero__stats {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 28px;
+}
+
+.stat {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.stat svg {
+  font-size: 22px;
+  color: #ffffff;
+}
+
+.stat strong {
+  display: block;
+  font-size: 22px; /* FIX: larger 68k+ */
+  font-weight: 700;
+}
+
+.stat span {
+  font-size: 12px;
+  color: #e0d8ea;
+}
+
+/* ================= CTA BUTTON ================= */
+.hp2-hero__btn {
+  background-color: #ff2d6f;
+  color: #fff;
+  border: none;
+  padding: 14px 26px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.hp2-hero__btn:hover {
+  background-color: #e62563;
+  transform: translateY(-2px);
+}
+
+/* ================= RIGHT BOOKS ================= */
+.hp2-hero__books {
+  display: flex;
+  gap: 26px;
+  margin-left: 120px; /* FIX: more space from left content */
+}
+
+/* BOOK CARD */
+.hp2-book-card {
+  width: 165px;
+  height: 255px;
+  border-radius: 14px; /* FIX: less rounded */
+  overflow: hidden;
+  position: relative;
+}
+
+.hp2-book-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* FADED LAST CARD */
+.hp2-book-card.faded {
+  opacity: 0.45;
+}
+
+/* ================= BEST SELLER BADGE ================= */
+.badge {
+  position: absolute;
+  top: 12px;
+  left: 0;
+  background-color: #ff9800;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 6px 12px; /* FIX: bigger badge */
+  border-radius: 10px;
+}

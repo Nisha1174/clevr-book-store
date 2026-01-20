@@ -1,0 +1,125 @@
+/* ================= HERO SECTION ================= */
+.hp3-hero {
+  position: relative;
+  height: 420px;
+
+  background: linear-gradient(
+      rgba(110, 0, 140, 0.85),
+      rgba(110, 0, 140, 0.85)
+    ), url("../../images/hero3.png");
+  background-size: cover;
+  
+  padding: 120px 20px 80px;
+}
+
+/* ================= OVERLAY ================= */
+.hp3-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(106, 0, 130, 0.85); /* purple overlay */
+  z-index: 1;
+}
+
+.hp3-hero__title {
+  font-size: 44px;
+  line-height: 1.25;
+  color: #ffffff;
+  margin-bottom: 14px;
+}
+
+/* Welcome to */
+.hp3-hero__title-light {
+  font-weight: 400;        /* normal */
+  opacity: 0.95;
+}
+
+/* Clevr */
+.hp3-hero__title-bold {
+  font-weight: 800;        /* bold */
+}
+
+
+/* ================= CONTENT ================= */
+.hp3-hero__content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #fff;
+  max-width: 800px;
+  margin: 0 auto 30px;
+}
+
+.hp3-hero__content h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.hp3-hero__content h1 span {
+  font-weight: 800;
+}
+
+.hp3-hero__content p {
+  font-size: 13px;
+  max-width: 400px;
+  margin: 0 auto;
+  line-height: 1.7;
+  opacity: 0.9;
+}
+
+/* ================= SEARCH BAR ================= */
+.hp3-hero__search {
+  position: absolute;
+  left: 50%;
+  bottom: -20px; /* 🔥 30% OUTSIDE HERO */
+  transform: translateX(-50%);
+
+  display: flex;
+  gap: 12px;
+  align-items: center;
+
+  background: #ffffff;
+  padding: 16px 18px;
+  border-radius: 14px;
+
+  /* 🌸 Pink / Purple floating glow */
+  box-shadow:
+    0 18px 40px rgba(160, 50, 200, 0.25),
+    0 6px 14px rgba(160, 50, 200, 0.15);
+
+  z-index: 10;
+}
+
+
+.hp3-hero__search select,
+.hp3-hero__search input {
+  border: none;
+  outline: none;
+  padding: 10px 22px;
+  font-size: 13px;
+  background: #f6f6f6;
+  border-radius: 6px;
+}
+
+.hp3-hero__search input {
+  flex: 1;
+}
+
+/* ================= SEARCH BUTTON ================= */
+.hp3-hero__search button {
+  background: #7b1fa2;
+  color: #fff;
+  border: none;
+  padding: 0 18px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.hp3-hero__search button span {
+  font-size: 16px;
+}

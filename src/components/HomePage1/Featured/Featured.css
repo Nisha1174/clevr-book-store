@@ -1,0 +1,202 @@
+/* ================= FEATURED SECTION ================= */
+.featured {
+  background-color: white;
+  padding: 60px 80px;
+}
+
+/* ================= HEADER ================= */
+.featured__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.featured__header h2 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.view-more {
+  font-size: 14px;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+/* ================= SLIDER ================= */
+.featured__slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+/* ================= FEATURED CARD BASE ================= */
+.featured-card {
+  background-color: white;
+  border-radius: 22px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+/* ================= MAIN CARD ================= */
+.featured-card--main {
+  display: flex;
+  gap: 32px;
+  padding: 30px;
+  width: 950px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+  z-index: 2;
+}
+
+/* ================= BLUR SIDE CARDS ================= */
+.featured-card--blur {
+  width: 220px;
+  height: 320px;
+  opacity: 0.35;
+  filter: blur(1px);
+  transform: scale(0.92);
+}
+
+.featured-card--blur img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ================= IMAGE ================= */
+.featured-image img {
+  width: 260px;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 18px;
+}
+
+/* ================= CONTENT ================= */
+.featured-content {
+  flex: 1;
+}
+
+.featured-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.badge {
+  background-color: #efe6f8;
+  color: var(--primary-color);
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 12px;
+}
+
+.reviews {
+  font-size: 12px;
+  color: #777;
+}
+
+.featured-content h3 {
+  font-size: 20px;
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+.featured-content p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* ================= PRICE ================= */
+.featured-price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 22px;
+}
+
+.price {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.old-price {
+  font-size: 14px;
+  color: #999;
+  text-decoration: line-through;
+}
+
+/* ================= ACTIONS ================= */
+.featured-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-outline {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background-color: white;
+  cursor: pointer;
+}
+
+.details-link {
+  font-size: 14px;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+/* ================= SLIDER BUTTON ================= */
+.slider-btn {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: var(--primary-color);
+  border: none;
+  cursor: pointer;
+
+  font-size: 24px;
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+  transition: all 0.3s ease;
+}
+
+.slider-btn--left {
+  left: -28px;
+}
+
+.slider-btn--right {
+  right: -28px;
+}
+
+.slider-btn:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}

@@ -1,0 +1,133 @@
+/* ================= HERO SECTION ================= */
+.hero {
+  position: relative;
+  height: 520px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 0 80px;
+  overflow: hidden;
+}
+:root {
+    --primary-color: #8F0177;
+    --white-color: #FFFFF0;
+    --gray-color: #F5F2F2;
+}
+
+/* ================= HERO OVERLAY ================= */
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(74, 20, 140, 0.9),
+    rgba(123, 31, 162, 0.7),
+    rgba(123, 31, 162, 0.3)
+  );
+}
+
+/* ================= HERO CONTENT ================= */
+.hero__content {
+  position: relative;
+  z-index: 2;
+  max-width: 520px;
+  color: #ffffff;
+}
+
+/* ================= PROMO BADGE ================= */
+.hero__promo {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+  margin-bottom: 18px;
+}
+
+.promo-tag {
+  background-color: #e91e63;
+  color: white;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 20px;
+}
+
+.promo-text {
+  font-size: 12px;
+  font-weight: 500;
+  padding: 6px 14px;
+
+  /* 🔥 FADED GLASS BACKGROUND */
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.35),
+    rgba(255, 255, 255, 0.15)
+  );
+
+  color: #ffffff;
+  border-radius: 20px;
+
+  /* 🔥 Connect visually with pink pill */
+  margin-left: -4px;
+
+  backdrop-filter: blur(6px);
+}
+
+
+/* ================= HERO TITLE ================= */
+.hero__title {
+  font-size: 42px;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+/* ================= HERO DESCRIPTION ================= */
+.hero__description {
+  font-size: 15px;
+  line-height: 1.6;
+  opacity: 0.85;
+  margin-bottom: 28px;
+}
+
+/* ================= HERO BUTTON ================= */
+.hero__button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.hero__button .arrow {
+  font-size: 16px;
+}
+
+/* ================= HERO SLIDER INDICATOR ================= */
+.hero__indicator {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 3;
+}
+
+.hero__indicator .line {
+  width: 18px;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 2px;
+}
+
+.hero__indicator .line.active {
+  background-color: #ffffff;
+  width: 24px;
+}

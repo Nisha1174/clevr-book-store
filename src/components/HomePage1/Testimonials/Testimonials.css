@@ -1,0 +1,116 @@
+/* ================= TESTIMONIALS SECTION ================= */
+.testimonials {
+  background-color: white;
+  padding: 80px 80px 100px;
+  position: relative;
+}
+
+/* HEADER */
+.testimonials-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.testimonials-header h2 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.testimonials-header p {
+  max-width: 620px;
+  margin: 0 auto;
+  font-size: 13px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* ROW */
+.testimonials-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+}
+
+/* CARD */
+.testimonial-card {
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 12px;
+  font-size: 13px;
+  transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+  border-color: pink;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px); /* subtle lift */
+}
+
+
+/* STARS */
+.stars {
+  color: #ff9800;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* TEXT */
+.review {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+/* USER */
+.user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.name {
+  display: block;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.role {
+  display: block;
+  font-size: 11px;
+  color: #999;
+}
+
+/* CONTROLS */
+.testimonial-controls {
+  position: absolute;
+  bottom: 30px;
+  right: 80px;
+  display: flex;
+  gap: 12px;
+}
+
+.control-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background-color: #fff;
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.control-btn.active {
+  background-color: var(--primary-color);
+  color: #fff;
+}
