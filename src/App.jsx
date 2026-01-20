@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 
 import HomePage1Layout from "./components/HomePage1/HomePage1Layout";
-import HomePage2Layout from "./components/HomePage2/HomePage2Layout";
+import HomePage2Layout from "./components/HomePage2/HomePage2Layout.jsx";
 import HomePage3Layout from "./components/HomePage3/HomePage3Layout";
 import BookGridLayout from "./components/BookGrid/BookGridLayout";
 
