@@ -1,15 +1,16 @@
 .breadcrumb {
-  max-width: 1200px;
-  margin: 20px auto;
-  padding: 0 20px;
-  font-size: 14px;
-  color: #777;
+  width: 100%;              /* full screen width */
+  background: linear-gradient(90deg, #f1c7ec 0%, #ffffff 100%); /* pink → white */
+  padding: 16px 100px;          /* increase height */
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
+
 .breadcrumb-link {
-  color: #7b2cbf;
+  color: #b32cbf;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .breadcrumb-link:hover {
@@ -22,4 +23,9 @@
 
 .breadcrumb-current {
   color: #999;
+}
+.breadcrumb-container {
+  max-width: 1200px;   /* same as your website width */
+  margin: 0 auto;      /* center content */
+  padding: 0 20px;
 }

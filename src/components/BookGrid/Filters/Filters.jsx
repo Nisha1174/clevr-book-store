@@ -13,16 +13,65 @@ function Filters() {
           <span>⌄</span>
         </div>
 
-        <label><input type="checkbox" /> All Genres</label>
-        <label><input type="checkbox" /> Art & Photography</label>
-        <label><input type="checkbox" /> Biographies & Memory</label>
-        <label><input type="checkbox" /> Children’s Book</label>
-        <label><input type="checkbox" /> Cookbook & Food</label>
-        <label><input type="checkbox" /> History</label>
-        <label><input type="checkbox" /> Literature & Fiction</label>
-        <label><input type="checkbox" /> Romance</label>
-        <label><input type="checkbox" /> Sci-Fi & Fantasy</label>
-        <label><input type="checkbox" /> Teen & Young Adult</label>
+        <label className="circle-checkbox">
+          <input type="checkbox" />
+          <span className="checkmark"></span>
+          <span className="label-text">All Genres</span>
+        </label>
+
+        <label className="circle-checkbox">
+          <input type="checkbox" />
+          <span className="checkmark"></span>
+          <span className="label-text">Art & Photography</span>
+        </label>
+
+        <label className="circle-checkbox">
+          <input type="checkbox" />
+          <span className="checkmark"></span>
+          <span className="label-text">Biographies & Memory</span>
+        </label>
+
+        <label className="circle-checkbox">
+          <input type="checkbox" />
+          <span className="checkmark"></span>
+          <span className="label-text">Children’s Book</span>
+        </label>
+
+        <label className="circle-checkbox">
+          <input type="checkbox" />
+          <span className="checkmark"></span>
+          <span className="label-text">Cookbook & Food</span>
+        </label>
+
+        <label className="circle-checkbox">
+          <input type="checkbox" />
+          <span className="checkmark"></span>
+          <span className="label-text">History</span>
+        </label>
+
+        <label className="circle-checkbox">
+          <input type="checkbox" />
+          <span className="checkmark"></span>
+          <span className="label-text">Literature & Fiction</span>
+        </label>
+
+        <label className="circle-checkbox">
+          <input type="checkbox" />
+          <span className="checkmark"></span>
+          <span className="label-text">Romance</span>
+        </label>
+
+        <label className="circle-checkbox">
+          <input type="checkbox" />
+          <span className="checkmark"></span>
+          <span className="label-text">Sci-Fi & Fantasy</span>
+        </label>
+
+        <label className="circle-checkbox">
+          <input type="checkbox" />
+          <span className="checkmark"></span>
+          <span className="label-text">Teen & Young Adult</span>
+        </label>
 
         <button className="link-btn">+ Load More</button>
       </div>
@@ -34,26 +83,29 @@ function Filters() {
           <span>⌄</span>
         </div>
 
-        <label><input type="checkbox" /> Hardcover</label>
-        <label><input type="checkbox" /> Paperback</label>
-        <label><input type="checkbox" /> E-book</label>
-        <label><input type="checkbox" /> Large Print</label>
-      </div>
+        <label className="circle-checkbox">
+          <input type="checkbox" />
+          <span className="checkmark"></span>
+          <span className="label-text">Hardcover</span>
+        </label>
 
-      {/* Publisher */}
-      <div className="filter-section">
-        <div className="filter-header">
-          <h4>Publisher</h4>
-          <span>⌄</span>
-        </div>
-      </div>
+        <label className="circle-checkbox">
+          <input type="checkbox" />
+          <span className="checkmark"></span>
+          <span className="label-text">Paperback</span>
+        </label>
 
-      {/* Years */}
-      <div className="filter-section">
-        <div className="filter-header">
-          <h4>Years</h4>
-          <span>⌄</span>
-        </div>
+        <label className="circle-checkbox">
+          <input type="checkbox" />
+          <span className="checkmark"></span>
+          <span className="label-text">E-book</span>
+        </label>
+
+        <label className="circle-checkbox">
+          <input type="checkbox" />
+          <span className="checkmark"></span>
+          <span className="label-text">Large Print</span>
+        </label>
       </div>
 
       {/* Price Range */}

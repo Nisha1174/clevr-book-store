@@ -81,3 +81,41 @@ input[type="range"] {
   color: #777;
   cursor: pointer;
 }
+.circle-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  position: relative;
+}
+
+.circle-checkbox input {
+  display: none;
+}
+
+.circle-checkbox .checkmark {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #7b2cbf;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  transition: 0.2s ease;
+}
+
+.circle-checkbox input:checked + .checkmark {
+  background-color: #7b2cbf;
+}
+
+.circle-checkbox input:checked + .checkmark::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

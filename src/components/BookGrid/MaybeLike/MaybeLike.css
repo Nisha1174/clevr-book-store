@@ -1,0 +1,167 @@
+:root {
+  --primary-color: #8f0177;
+}
+
+/* ================= SECTION ================= */
+.maybe-like {
+  padding: 60px 80px;
+  background-color: white;
+  margin-top: 40px;
+}
+
+/* ================= HEADER ================= */
+.maybe-like__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.maybe-like__header h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.view-more {
+  color: var(--primary-color);
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* ================= SLIDER ================= */
+.maybe-like__slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* SLIDER BUTTONS */
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: white;
+  border: none;
+  color: var(--primary-color);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.slider-btn:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.slider-btn.left {
+  left: -18px;
+}
+
+.slider-btn.right {
+  right: -18px;
+}
+
+/* ================= LIST ================= */
+.maybe-like__list {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  padding: 0 60px;
+}
+
+/* ================= CARD ================= */
+.maybe-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 420px;
+}
+
+/* IMAGE */
+.maybe-card__image {
+  width: 120px;
+  height: 180px;
+  border-radius: 14px;
+  overflow: hidden;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.maybe-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ⭐ RATING */
+.rating-top {
+  position: absolute;
+  top: 8px;
+  right: 58px;
+  background-color: #ffe3b3;
+  color: #ff9800;
+  font-size: 11px;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-weight: 500;
+  z-index: 2;
+}
+
+/* CONTENT */
+.maybe-card__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* CATEGORY */
+.badge.category {
+  background-color: #efe6f5;
+  color: var(--primary-color);
+  font-size: 11px;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-weight: 500;
+  width: fit-content;
+  margin-bottom: 6px;
+}
+
+/* TEXT */
+.maybe-title {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.maybe-author {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+/* PRICE */
+.maybe-price {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.price {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.old-price {
+  font-size: 12px;
+  text-decoration: line-through;
+  color: #999;
+}

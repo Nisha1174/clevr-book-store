@@ -3,13 +3,11 @@ import "./BooksGrid.css";
 function BookCard({ book }) {
   return (
     <div className="book-card">
-
-      {book.badge && <span className="badge">{book.badge}</span>}
-
       <div className="book-image">
+        {book.badge && <span className="badge">{book.badge}</span>}
+
         <img src={book.image} alt={book.title} />
 
-        {/* Hover Icons */}
         <div className="hover-icons">
           <button>♡</button>
           <button>🔍</button>
@@ -28,7 +26,6 @@ function BookCard({ book }) {
 
         <p className="price">${book.price}</p>
       </div>
-
     </div>
   );
 }
